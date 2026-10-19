@@ -42,6 +42,15 @@ For more information, see the [`@actions/artifact`](https://github.com/actions/t
 
 For assistance with breaking changes, see [MIGRATION.md](docs/MIGRATION.md).
 
+## CI
+
+This repository uses a CI workflow (`.github/workflows/ci.yml`) that runs on pushes to `main` and on all pull requests. It checks:
+
+- **Format**: Prettier format check
+- **Lint**: ESLint
+- **Build**: TypeScript compilation (`tsc`)
+- **Test**: Jest unit tests
+
 ## Note
 
 Thank you for your interest in this GitHub repo, however, right now we are not taking contributions. 
